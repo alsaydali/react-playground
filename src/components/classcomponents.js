@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 class ClassComponents extends Component {
+  constructor(props) {
+    super(props);
+    console.log("constructor");
+  }
+
+  componentDidMount() {
+    console.log("did");
+  }
+  comp;
   state = {
     toggle: true,
   };
