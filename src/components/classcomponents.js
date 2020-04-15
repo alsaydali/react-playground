@@ -15,6 +15,9 @@ class ClassComponents extends Component {
   toggle = () => {
     this.setState({ toggle: !this.state.toggle });
   };
+  submit = () => {
+    console.log(this.text.value);
+  };
   render() {
     const { text } = this.props;
     return (
@@ -23,6 +26,13 @@ class ClassComponents extends Component {
         {this.state.toggle && <p>This will hide and show</p>}
 
         <button onClick={this.toggle}>Show / Hid</button>
+        <input
+          type="text"
+          ref={(input) => {
+            this.text = input;
+          }}
+        />
+        <button onClick={this.submit}>show value</button>
       </>
     );
   }
