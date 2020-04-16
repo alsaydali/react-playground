@@ -1,11 +1,10 @@
 import React from "react";
-import ClassComponents from "./components/classcomponents";
-
+import MoviesDb from "./components/movies/moviesdb";
 const App = () => {
   return (
     <>
       <h1>Hello World</h1>
-      <ClassComponents text="Hello" />
+      <MoviesDb />
     </>
   );
 };
