@@ -13,9 +13,7 @@ class MovieList extends Component {
   render() {
     return (
       <div>
-        <h1>{this.props.movie.name}</h1>
-        <h3>{this.props.desc}</h3>
-        <h5>{this.props.movie.gene}</h5>
+        <h1>{this.props.movie.title}</h1>
       </div>
     );
   }
