@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-const Movies = () => {
+const Movies = (props) => (
   <div>
-    <h1>{this.props.movie.title}</h1>
-  </div>;
-};
+    <h1>{props.movie.title}</h1>
+  </div>
+);
 
 export default Movies;
